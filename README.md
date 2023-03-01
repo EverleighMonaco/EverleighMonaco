@@ -27,7 +27,6 @@ Make a local copy of the repo and create a log directory.
 $ git clone https://github.com/EverleighMonaco/EverleighMonaco.git
 $ cd EverleighMonaco
 $ mkdir log
-
 ```
 
 Get the deps and compile.
