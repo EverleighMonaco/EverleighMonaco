@@ -32,4 +32,7 @@ rebar/*
 rebar3.crashdump
 tramp
 vendor/*
-EXPERIMENTAL/*
+.clj-kondo/
+.lsp
+.rebar3.lock
+.metals

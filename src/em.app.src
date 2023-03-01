@@ -1,0 +1,17 @@
+{application, 'em', [
+    {description, "Real Estate on STERIODS."},
+    {vsn, git},
+    {registered, []},
+    {mod, {'em-app', []}},
+    {applications, [
+        kernel,
+        stdlib,
+        erlexec,
+        yaws,
+    ]},
+    {env,[]},
+    {modules, []},
+
+    {licenses, ["Apache 2.0"]},
+    {links, []}
+ ]}.
