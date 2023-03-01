@@ -1,0 +1,24 @@
+;; from here: https://github.com/Tensegritics/ClojureDart/blob/main/samples/fetch-data/src/sample/fetch_data.cljd
+(ns zurich.home 
+  "Faithful port of https://docs.flutter.dev/cookbook/networking/fetch-data"
+  (:require
+   ["dart:convert" :as c]
+   ["package:flutter/material.dart" :as m]
+   ["package:http/http.dart" :as http]
+   [cljd.flutter :as f]))
+
+(defn main []
+  (f/run
+    (m/MaterialApp
+      .title "Zurich!"
+      .theme (m/ThemeData .primarySwatch m/Colors.pink))
+    .home
+    (m/Scaffold .appBar (m/AppBar .title (m/Text "Zurich")))
+    .body
+    m/Center
+    :watch [response (http/get (Uri/parse "http://localhost:8600/api/vi"))] ; get example api data
+    (if-some [{sc .-statusCode body .-body} ^http/Response response] ;; type hint is not necessary here, it removes compiler warnings
+      (case sc
+        200 (m/Text (get (c/json.decode body) "Address"))
+        (m/Text (str "Something wrong happened, status code: " sc)))
+      (m/CircularProgressIndicator))))

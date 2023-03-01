@@ -1,0 +1,13 @@
+body img.logo {
+  width: 100%;
+  max-width: 200px;
+}
+
+body img.footer-logo {
+  width: 100%;
+  max-width: 600px;
+}
+
+body img.image {
+  width: 100%;
+}
