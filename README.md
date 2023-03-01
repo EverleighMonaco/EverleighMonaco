@@ -12,10 +12,37 @@ The application server is written in Erlang and Lisp Flavoured Erlang. The React
 
 Requirements (experimental)
 * Erlang/OTP 24
-* Yaws 2.1.1
+* Rebar3
 * Clojure 1.11
+* Leiningen
 * Java 16
 * NodeJS v12
+
+
+## Setting up
+
+Make a local copy of the repo and create a log directory.
+
+```
+$ git clone https://github.com/EverleighMonaco/EverleighMonaco.git
+$ cd EverleighMonaco
+$ mkdir log
+
+```
+
+Get the deps and compile.
+
+```
+$ rebar3 deps
+$ cd priv/everleighmonaco.com-cljs
+$ lein deps
+
+# compile the css
+$ lein garden once
+
+# compile the front end
+$ npx shadow-cljs compile app
+```
 
 ## Acknoledgements
 
