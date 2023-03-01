@@ -7,7 +7,7 @@
         kernel,
         stdlib,
         erlexec,
-        yaws,
+        yaws
     ]},
     {env,[]},
     {modules, []},
