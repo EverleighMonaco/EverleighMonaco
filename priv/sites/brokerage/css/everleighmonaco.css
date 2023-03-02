@@ -1,0 +1,32 @@
+body div.jumbo {
+  opacity: 1.0;
+  height: 600px;
+  background-image: url(/images/stock/StockSnap_GTTRWBKT3H-1080p.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body a.link {
+  color: black !important;
+  text-decoration: none;
+}
+
+body img.logo-small {
+  width: 100%;
+  max-width: 300px;
+}
+
+body img.logo {
+  width: 100%;
+  max-width: 200px;
+}
+
+body img.footer-logo {
+  width: 100%;
+  max-width: 600px;
+}
+
+body img.image {
+  width: 100%;
+}
