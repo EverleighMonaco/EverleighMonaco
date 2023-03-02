@@ -1,4 +1,4 @@
-![Project Logo][logo]
+![screenshot][screenshot]
 
 # Welcome to Everleigh Monaco
 
@@ -59,4 +59,5 @@ Everleigh Monaco is released under the [GNU Affero General Public License v3.0](
 
 <!-- Named page links below: /-->
 
-[logo]: https://everleighmonaco.com/favicon.png
+[screenshot]: images/screenshot.jpg 
+[logo]: images/screenshot.jpg 

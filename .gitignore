@@ -34,10 +34,10 @@ tramp
 vendor/*
 .clj-kondo/
 .lsp
-.rebar3.lock
 .metals
 priv/everleighmonaco.com-cljs/shadow-cljs.edn
 priv/brokerage.com-cljs/shadow-cljs.edn
 priv/sites/brokerage/assets
 priv/sites/everleighmonaco.com-dev/assets
 priv/sites/everleighmonaco.com-release/assets
+rebar.lock
