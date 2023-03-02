@@ -36,3 +36,4 @@ vendor/*
 .lsp
 .rebar3.lock
 .metals
+priv/everleighmonaco.com-cljs/shadow-cljs.edn
