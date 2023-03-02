@@ -12,7 +12,7 @@
    #"/"
    (lfest-resp:content
     "application/json"
-    (jsx:encode(em-data:listings)))))
+    (ljson:encode(em-data:listings)))))
 
 (defun routes
   "REST API Routes"

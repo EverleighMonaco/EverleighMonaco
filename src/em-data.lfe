@@ -8,6 +8,10 @@
 
 (include-lib "lfe/include/clj.lfe")
 
+(defn formatted-listings []
+  "testing!"
+  (map 'data  (listings)))
+
 (defn listings []
   "An example listing"
      (map
@@ -48,7 +52,7 @@
       #"id" #"64f9d5f7-a788-4fbc-aa78-d9ad6a8f6e66"
       #"listing-agent" (agent)
       #"meta" #"listing"
-      #"address" #"1156 Runnymede Rd"
+      #"address" #"19156 Runnymede Rd"
       #"city" #"Toronto"
       #"state" #"Ontario"
       #"postal_code" #"M6S 2Z7"
@@ -114,14 +118,14 @@
        #"id" #"60d35f47-8fb0-4abe-922b-2a8ceefbb086"
        #"listing-agent" (agent)
        #"meta" #"listing"
-       #"address" #"22 Queens Sq West"
+       #"address" #"9122 Queens Sq West"
        #"city" #"Toronto"
        #"state" #"Ontario"
        #"postal_code" #"N3C 1H3"
        #"country" #"Canada"
        #"phone" #"555-555-5555" 
        #"what" #"For sale"
-       #"loot" 80000000
+       #"loot" 8000000
        #"loot-insturment" #"CAD"
        #"dom" 3 
        #"photos" (list
@@ -139,7 +143,7 @@
        #"id" #"a18b1bb1-e2a2-41a3-b18b-dc879704d833"
        #"listing-agent" (agent)
        #"meta" #"listing"
-       #"address" #"1221 Rue King"
+       #"address" #"91221 Rue King"
        #"city" #"Toronto"
        #"state" #"Ontario"
        #"postal_code" #"J1H 1R4"
